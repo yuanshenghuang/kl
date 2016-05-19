@@ -1,0 +1,16 @@
+﻿@model DropDownListFor.Models.Category
+
+@using(Html.BeginForm())
+{
+    <fieldset>
+        <dl>
+            <dt>
+                @Html.LabelFor(x=>x.SelectedCategory)
+            </dt>
+            <dt>
+                @Html.DropDownListFor(x => x.SelectedCategory,Model.CategoryList)
+            </dt>
+        </dl>
+    </fieldset>
+    <input type="submit" value="go"/>
+}
